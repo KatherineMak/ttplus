@@ -1,0 +1,105 @@
+---
+title: Info Page
+---
+extends layouts/_layout
+block content
+    section.info-page
+        .container
+            .breadcrumbs
+                a.btn(href="#") Главная
+                p / Полезная информация
+            h2 Полезная информация
+            .tabs
+                ul.tabs__caption
+                    li.active
+                        a.btn.tab-button Документы
+                    li
+                        a.btn.tab-button Статьи
+                    li
+                        a.btn.tab-button Видео
+                .custom-select
+                    select#tab-select
+                        option(value='documents') Документы
+                        option(value='articles') Статьи
+                        option(value='video') Видео
+                .tabs__content.active.tabs__content-mobile#documents
+                    .info__cards
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                    .info__bottom
+                        a.btn.btn-prev(href="#")
+                            span.span-arrow
+                            span.span-text Предыдущая страница
+                        a.btn.btn-next(href="#")
+                            span.span-text Следующая страница
+                            span.span-arrow
+                .tabs__content.about__documents-tab.tabs__content-mobile#articles
+                    .info__cards
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                    .info__bottom
+                        a.btn.btn-prev(href="#")
+                            span.span-arrow
+                            span.span-text Предыдущая страница
+                        a.btn.btn-next(href="#")
+                            span.span-text Следующая страница
+                            span.span-arrow
+                .tabs__content.about__documents-tab.tabs__content-mobile#video
+                    .info__cards
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                        .info__card
+                            .card__image
+                                img(src="img/main/bitmap.png", alt="")
+                            .card__bottom
+                                p <span> Электрическая прочность </span> электролитических конденсаторов
+                                a.btn.btn-primary(href="#") Читать полностью
+                    .info__bottom
+                        a.btn.btn-prev(href="#")
+                            span.span-arrow
+                            span.span-text Предыдущая страница
+                        a.btn.btn-next(href="#")
+                            span.span-text Следующая страница
+                            span.span-arrow

@@ -1,0 +1,33 @@
+---
+title: Contacts Page
+---
+extends layouts/_layout
+block content
+    section.contacts
+        .container
+            .breadcrumbs
+                a.btn(href="#") Главная
+                p / Контакты
+            h2 Контакты
+            .contacts__content
+                ul
+                    li
+                        .contacts-heading
+                            .dot
+                            h3 Адрес:
+                        p г.Санкт-Петербург, ул. Лодейнопольская, 5 литера А (здание КЦ "Петроконгресс")
+                        p Пешком от м.Чкаловская по ул. Большая Зеленина  до ул. Лодейнопольская и повернуть направо. <br>
+                        p <span>Время в пути 6 минут.</span>
+                        p Если едете на машине, то парковаться лучше  либо на Лодейнопольской улице, либо на Петрозаводской.
+                    li
+                        .contacts-heading
+                            .dot
+                            h3 Телефон:
+                        p +7 (812) 303 98 63
+                    li
+                        .contacts-heading
+                            .dot
+                            h3 Факс:
+                        p +7 (812) 335 89 07
+                .maps
+                    #map

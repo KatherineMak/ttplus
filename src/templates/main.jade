@@ -1,0 +1,210 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+  section.bg
+    section.intro
+      .container
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              .intro__content
+                h2.heading Электродвигатели Dunkermotoren
+                p Немецкое качество с более чем полувековой историей
+                .content__bottom
+                  a.btn.btn-primary(href="#") Подробнее
+                  a.btn.btn-next--blue(href="#") В каталог
+                    span.span-arrow
+              .intro__image
+                img(src="img/main/intro-lg.png", alt="")
+                a.btn-play(href="#")
+                  .sp-circle
+                  .sp-text Смотреть видео
+              .intro__bottom
+                a.btn.btn-next--blue(href="#") В каталог
+                  span.span-arrow
+              .intro__card
+                .card__image
+                  img(src="img/main/intro-sm.png", alt="")
+                .card__content
+                  p BG | EC Motors
+                  p GR/G | Brushed <br> DC Motors
+                  p KD/DR | AC motors
+                a.btn.btn-intro(href="#")
+                  .sp-text Смотреть все
+            .swiper-slide
+              .intro__content
+                h2.heading Конденсаторы Jianghai
+                p Современные электролитические конденсаторы от крупнейшего китайского производителя
+                .content__bottom
+                  a.btn.btn-primary(href="#") Подробнее
+                  a.btn.btn-next--blue(href="#") В каталог
+                    span.span-arrow
+              .intro__image
+                img(src="img/main/intro-1-lg.png", alt="")
+                a.btn-play(href="#")
+                  .sp-circle
+                  .sp-text Смотреть видео
+              .intro__bottom
+                a.btn.btn-next--blue(href="#") В каталог
+                  span.span-arrow
+              .intro__card
+                .card__image
+                  img(src="img/main/intro-1-sm.png", alt="")
+                .card__content
+                  p Polyimer
+                  p Radial
+                  p Snap-in
+                  p Screw
+                a.btn.btn-intro(href="#")
+                  .sp-text Смотреть все
+          .swiper-pagination
+    section.about
+      .container
+        h2.heading О компании
+        .about__content
+          .about__block-text
+            p Dunkermotoren GmbH - немецкая производственная компания, которая с момента основания в 1950 году специализируется на высокоточных малогабаритных моторах и редукторах.
+            p Качество, профессионализм, высокий уровень сервиса, ориентированность на потребности клиента, оперативность и высокие экологические стандарты - отличительные черты продукции компании.
+            p В 1991 Дункенмоторен стал первым производителем в малых моторов в мире прошедших сертификацию ISO 9001.
+            a.btn.btn-secondary(href="#")
+              span.sp-arrow
+              span.sp-text Подробнее о компании
+          .about__cards
+            .about__card
+              .card__image
+                img(src="img/deadline.svg", alt="")
+              p Строгое <br> соблюдение<br> сроков поставки
+            .about__card
+              .card__image
+                img(src="img/help.svg", alt="")
+              p Техническое сопровождение<br> и поддержка
+            .about__card
+              .card__image
+                img(src="img/warehouse.svg", alt="")
+              p Склады <br> в Москве и <br> Санкт-Петербурге
+            .about__card
+              .card__image
+                img(src="img/wallet.svg", alt="")
+              p Кредитование
+    section.slider-about
+      .swiper-about-cards
+        .swiper-wrapper
+          .swiper-slide
+            .about__card
+              .card__content
+                .card__image
+                  img(src="img/deadline.svg", alt="")
+                p Строгое <br> соблюдение<br> сроков поставки
+          .swiper-slide
+            .about__card
+              .card__content
+                .card__image
+                  img(src="img/help.svg", alt="")
+                p Техническое сопровождение<br> и поддержка
+          .swiper-slide
+            .about__card
+              .card__content
+                .card__image
+                  img(src="img/warehouse.svg", alt="")
+                p Склады <br> в Москве и <br> Санкт-Петербурге
+          .swiper-slide
+            .about__card
+              .card__content
+                .card__image
+                  img(src="img/wallet.svg", alt="")
+                p Кредитование
+        .swiper-about-cards-pagination
+    section.catalog
+      .container
+        h2.heading Каталог
+        .catalog__content
+          .catalog-card
+            .card__image
+              img(src="img/main/card-1.png", alt="")
+            .card__content
+              p Электродвигатели <span>Dunkermotoren</span>
+            .card__bottom
+              a.btn.btn-primary(href="#") Подробнее
+              a.btn.btn-secondary(href="#")
+                span.sp-arrow
+                span.sp-text В каталог
+          .catalog-card
+            .card__image
+              img(src="img/main/card-2.png", alt="")
+            .card__content
+              p Электролитические и пленочные конденсаторы <span>Jianghai</span>
+            .card__bottom
+              a.btn.btn-primary(href="#") Подробнее
+              a.btn.btn-secondary(href="#")
+                span.sp-arrow
+                span.sp-text В каталог
+  section.offer
+    .container
+      form
+        .form__container
+          h2 Индивидуальное предложение
+          p Кратко опишите задачу и мы подготовим для Вас индивидуальное предложение:
+          .inputs__container
+            input(type="text" placeholder="Ваше имя")
+            input(type="tel" placeholder="Ваш телефон" id="tel")
+            input(type="email" placeholder="E-mail")
+            input(type="text" placeholder="Комментарий")
+          .form-bottom
+            .policy
+              input.policy__input(type="checkbox" id="policy-offer" checked)
+              label.policy__label(for="policy-offer")
+              label.policy__label--text(for="policy-offer")
+               a(href="#") Я даю свое согласие на обработку персональных данных
+            a.btn.btn-form(href="#") Получить
+  section.info
+    .container
+      .info__heading
+        h2.heading Полезная информация
+        a.btn.btn-secondary(href="#")
+          span.sp-arrow
+          span.sp-text Смотреть <br> всё
+      .info__cards
+        .info__card
+          .card__image
+            img(src="img/main/bitmap.png", alt="")
+          .card__bottom
+            p <span> Электрическая прочность </span> электролитических конденсаторов
+            a.btn.btn-primary(href="#") Читать полностью
+        .info__card
+          .card__image
+            img(src="img/main/bitmap.png", alt="")
+          .card__bottom
+            p <span> Электрическая прочность </span> электролитических конденсаторов
+            a.btn.btn-primary(href="#") Читать полностью
+        .info__card
+          .card__image
+            img(src="img/main/bitmap.png", alt="")
+          .card__bottom
+            p <span> Электрическая прочность </span> электролитических конденсаторов
+            a.btn.btn-primary(href="#") Читать полностью
+        .info__card
+          .card__image
+            img(src="img/main/bitmap.png", alt="")
+          .card__bottom
+            p <span> Электрическая прочность </span> электролитических конденсаторов
+            a.btn.btn-primary(href="#") Читать полностью
+      .info__bottom
+        a.btn.btn-secondary(href="#")
+          span.sp-arrow
+          span.sp-text Смотреть <br> всё
+
+  section.subscribe
+    .container
+      form
+        .form__container
+          h2 Подписаться на обновления
+          p Вы будете получать уведомления  о новых статьях, новостях компании и новых товарах на свой e-mail:
+          input(type="email" placeholder="E-mail")
+          .policy
+            input.policy__input(type="checkbox" id="policy-subscribe" checked)
+            label.policy__label(for="policy-subscribe")
+            label.policy__label--text(for="policy-subscribe")
+              a(href="#") Я даю свое согласие на обработку персональных данных
+          a.btn.btn-form(href="#") Получить

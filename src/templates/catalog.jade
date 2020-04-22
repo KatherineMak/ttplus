@@ -1,0 +1,51 @@
+---
+title: Catalog Page
+---
+extends layouts/_layout
+block content
+    section.catalog-page
+        .container
+            .breadcrumbs
+                a.btn(href="#") Главная
+                p / Каталог
+            h2 Каталог
+        .product-cards
+            .catalog-card
+                .card__image
+                    img(src="img/main/card-1.png", alt="")
+                .card__heading
+                    h3 Электродвигатели <span>Dunkermotoren</span>
+                .card__content
+                    .content__column
+                        p BG | EC Motors
+                        p GR/G | Brushed DC Motors
+                        p KD/DR | AC motors
+                        p D/DCD | Venetian blind drives
+                    .content__column
+                        p PLG/SG/STG | Gearboxes
+                        p BGE | Controllers
+                        p Brakes and Encoders
+                        p Linear Systems
+                .card__bottom
+                    a.btn.btn-primary(href="#") Подробнее
+                    a.btn.btn-secondary(href="#")
+                        span.sp-arrow
+                        span.sp-text В каталог
+            .catalog-card
+                .card__image
+                    img(src="img/main/card-2.png", alt="")
+                .card__heading
+                    h3 Электролитические и пленочные конденсаторы <span>Jianghai</span>
+                .card__content
+                    .content__column
+                        p Polyimer
+                        p Snap-in
+                        p Film capacitors
+                    .content__column
+                        p Radial
+                        p Screw
+                .card__bottom
+                    a.btn.btn-primary(href="#") Подробнее
+                    a.btn.btn-secondary(href="#")
+                        span.sp-arrow
+                        span.sp-text В каталог
