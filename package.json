@@ -73,6 +73,6 @@
   "dependencies": {
     "inputmask": "^5.0.3",
     "selectric": "^1.13.0",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   }
 }
